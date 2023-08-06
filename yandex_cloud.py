@@ -32,6 +32,3 @@ def get_text_from_speech(file_url):
     result = response.json()
     # Возвращаем текст аудиосообщения
     return result.get('result')
-
-if __name__ == '__main__':
-    print(get_text_from_speech('https://api.telegram.org/file/bot6675082721:AAFtEeULxgzbP-IMGWcMYqxW1knBLkYwmVk/voice/file_0.oga'))
