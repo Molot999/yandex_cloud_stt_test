@@ -16,14 +16,6 @@ def handle_voice(message):
     file_base_url = f"https://api.telegram.org/file/bot{BOT_TOKEN}/{voice_path}"
     speech_text = get_text_from_speech(file_base_url)
     bot.send_message(message.chat.id, speech_text)
-    # Здесь можно добавить логику обработки аудио
-    # Например, распознавание речи, анализ тональности и т.д.
-
-#     bot.reply_to(message, "Аудиосообщение получено и обработано!")
-
-# @bot.message_handler(func=lambda message: True)
-# def handle_all_messages(message):
-#     bot.reply_to(message, "Пожалуйста, воспользуйтесь кнопкой для отправки аудиосообщения.")
 
 if __name__ == "__main__":
     bot.polling(none_stop=True)
