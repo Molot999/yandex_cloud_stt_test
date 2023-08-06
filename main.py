@@ -18,4 +18,4 @@ def handle_voice(message):
     bot.send_message(message.chat.id, speech_text)
 
 if __name__ == "__main__":
-    bot.polling(none_stop=True)
+    bot.polling(non_stop=True)
